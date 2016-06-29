@@ -14,6 +14,9 @@
 		1AE870C41D24561700B898FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE870C21D24561700B898FB /* LaunchScreen.storyboard */; };
 		1AE870CF1D24561700B898FB /* ThoughtRecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE870CE1D24561700B898FB /* ThoughtRecordTests.swift */; };
 		1AE870DA1D24561700B898FB /* ThoughtRecordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE870D91D24561700B898FB /* ThoughtRecordUITests.swift */; };
+		2EF463F2C1DC030D12CD9723 /* Pods_ThoughtRecordUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28E9D3EDCE2A71910EA37F2 /* Pods_ThoughtRecordUITests.framework */; };
+		A38BF312439C48F6CE119D26 /* Pods_ThoughtRecord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1031274BD4181E79D790C5C /* Pods_ThoughtRecord.framework */; };
+		C4052BEA74B8CE5BD8A070BB /* Pods_ThoughtRecordTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B6D31A4DE30720163C1100 /* Pods_ThoughtRecordTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +36,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1AE871041D2467A500B898FB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0871E9AAE5D69F48D5B32480 /* Pods-ThoughtRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThoughtRecord.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThoughtRecord/Pods-ThoughtRecord.release.xcconfig"; sourceTree = "<group>"; };
+		0FE68D95EB3EF2FA908394B3 /* Pods-ThoughtRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThoughtRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThoughtRecord/Pods-ThoughtRecord.debug.xcconfig"; sourceTree = "<group>"; };
 		1AE870B61D24561700B898FB /* ThoughtRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThoughtRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE870B91D24561700B898FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AE870BB1D24561700B898FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +65,13 @@
 		1AE870D51D24561700B898FB /* ThoughtRecordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThoughtRecordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE870D91D24561700B898FB /* ThoughtRecordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtRecordUITests.swift; sourceTree = "<group>"; };
 		1AE870DB1D24561700B898FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AD8967B72438C5D53A4DCC7 /* Pods-ThoughtRecordTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThoughtRecordTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThoughtRecordTests/Pods-ThoughtRecordTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4EFD3037337FCDD2F9ABB7C2 /* Pods-ThoughtRecordTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThoughtRecordTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThoughtRecordTests/Pods-ThoughtRecordTests.release.xcconfig"; sourceTree = "<group>"; };
+		8031A18E5B015AC1CA5D8D40 /* Pods-ThoughtRecordUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThoughtRecordUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThoughtRecordUITests/Pods-ThoughtRecordUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C28E9D3EDCE2A71910EA37F2 /* Pods_ThoughtRecordUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThoughtRecordUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8B6D31A4DE30720163C1100 /* Pods_ThoughtRecordTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThoughtRecordTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE196ED445F49C90DDCFB6D2 /* Pods-ThoughtRecordUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThoughtRecordUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThoughtRecordUITests/Pods-ThoughtRecordUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F1031274BD4181E79D790C5C /* Pods_ThoughtRecord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThoughtRecord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A38BF312439C48F6CE119D26 /* Pods_ThoughtRecord.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4052BEA74B8CE5BD8A070BB /* Pods_ThoughtRecordTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EF463F2C1DC030D12CD9723 /* Pods_ThoughtRecordUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +109,8 @@
 				1AE870CD1D24561700B898FB /* ThoughtRecordTests */,
 				1AE870D81D24561700B898FB /* ThoughtRecordUITests */,
 				1AE870B71D24561700B898FB /* Products */,
+				AE06BC4161D11C93E1A8BF53 /* Pods */,
+				424A6A92E2FD8D7AAA286FF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +155,29 @@
 			path = ThoughtRecordUITests;
 			sourceTree = "<group>";
 		};
+		424A6A92E2FD8D7AAA286FF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1031274BD4181E79D790C5C /* Pods_ThoughtRecord.framework */,
+				C8B6D31A4DE30720163C1100 /* Pods_ThoughtRecordTests.framework */,
+				C28E9D3EDCE2A71910EA37F2 /* Pods_ThoughtRecordUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE06BC4161D11C93E1A8BF53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FE68D95EB3EF2FA908394B3 /* Pods-ThoughtRecord.debug.xcconfig */,
+				0871E9AAE5D69F48D5B32480 /* Pods-ThoughtRecord.release.xcconfig */,
+				3AD8967B72438C5D53A4DCC7 /* Pods-ThoughtRecordTests.debug.xcconfig */,
+				4EFD3037337FCDD2F9ABB7C2 /* Pods-ThoughtRecordTests.release.xcconfig */,
+				8031A18E5B015AC1CA5D8D40 /* Pods-ThoughtRecordUITests.debug.xcconfig */,
+				DE196ED445F49C90DDCFB6D2 /* Pods-ThoughtRecordUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +185,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AE870DE1D24561700B898FB /* Build configuration list for PBXNativeTarget "ThoughtRecord" */;
 			buildPhases = (
+				5FE92E11EC47762DF0B1082D /* 📦 Check Pods Manifest.lock */,
 				1AE870B21D24561700B898FB /* Sources */,
 				1AE870B31D24561700B898FB /* Frameworks */,
 				1AE870B41D24561700B898FB /* Resources */,
+				1AE871041D2467A500B898FB /* Embed Frameworks */,
+				4923899C14E8AAABC9D10187 /* 📦 Embed Pods Frameworks */,
+				520663AC2E2FA8E44B40647D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AE870E11D24561700B898FB /* Build configuration list for PBXNativeTarget "ThoughtRecordTests" */;
 			buildPhases = (
+				A8083043B5315704AB749784 /* 📦 Check Pods Manifest.lock */,
 				1AE870C61D24561700B898FB /* Sources */,
 				1AE870C71D24561700B898FB /* Frameworks */,
 				1AE870C81D24561700B898FB /* Resources */,
+				3A29A3930006CD391EE12913 /* 📦 Embed Pods Frameworks */,
+				2171C69993AA0AF7276F463A /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AE870E41D24561700B898FB /* Build configuration list for PBXNativeTarget "ThoughtRecordUITests" */;
 			buildPhases = (
+				CF11BCCAFB3CBEC81818583F /* 📦 Check Pods Manifest.lock */,
 				1AE870D11D24561700B898FB /* Sources */,
 				1AE870D21D24561700B898FB /* Frameworks */,
 				1AE870D31D24561700B898FB /* Resources */,
+				6406654021EBB7F533A9EE38 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +312,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2171C69993AA0AF7276F463A /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThoughtRecordTests/Pods-ThoughtRecordTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A29A3930006CD391EE12913 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThoughtRecordTests/Pods-ThoughtRecordTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4923899C14E8AAABC9D10187 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThoughtRecord/Pods-ThoughtRecord-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		520663AC2E2FA8E44B40647D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThoughtRecord/Pods-ThoughtRecord-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FE92E11EC47762DF0B1082D /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6406654021EBB7F533A9EE38 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThoughtRecordUITests/Pods-ThoughtRecordUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8083043B5315704AB749784 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF11BCCAFB3CBEC81818583F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1AE870B21D24561700B898FB /* Sources */ = {
@@ -399,8 +584,10 @@
 		};
 		1AE870DF1D24561700B898FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FE68D95EB3EF2FA908394B3 /* Pods-ThoughtRecord.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ThoughtRecord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yvette.ThoughtRecord;
@@ -410,8 +597,10 @@
 		};
 		1AE870E01D24561700B898FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0871E9AAE5D69F48D5B32480 /* Pods-ThoughtRecord.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ThoughtRecord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yvette.ThoughtRecord;
@@ -421,6 +610,7 @@
 		};
 		1AE870E21D24561700B898FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AD8967B72438C5D53A4DCC7 /* Pods-ThoughtRecordTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ThoughtRecordTests/Info.plist;
@@ -433,6 +623,7 @@
 		};
 		1AE870E31D24561700B898FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EFD3037337FCDD2F9ABB7C2 /* Pods-ThoughtRecordTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ThoughtRecordTests/Info.plist;
@@ -445,6 +636,7 @@
 		};
 		1AE870E51D24561700B898FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8031A18E5B015AC1CA5D8D40 /* Pods-ThoughtRecordUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ThoughtRecordUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -456,6 +648,7 @@
 		};
 		1AE870E61D24561700B898FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE196ED445F49C90DDCFB6D2 /* Pods-ThoughtRecordUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ThoughtRecordUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -484,6 +677,7 @@
 				1AE870E01D24561700B898FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AE870E11D24561700B898FB /* Build configuration list for PBXNativeTarget "ThoughtRecordTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +686,7 @@
 				1AE870E31D24561700B898FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AE870E41D24561700B898FB /* Build configuration list for PBXNativeTarget "ThoughtRecordUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +695,7 @@
 				1AE870E61D24561700B898FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
