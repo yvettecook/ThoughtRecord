@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A7418DA1D283C0A001B5F1F /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7418D91D283C0A001B5F1F /* Record.swift */; };
 		1AE870BA1D24561700B898FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE870B91D24561700B898FB /* AppDelegate.swift */; };
 		1AE870BC1D24561700B898FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE870BB1D24561700B898FB /* ViewController.swift */; };
 		1AE870BF1D24561700B898FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE870BD1D24561700B898FB /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		0871E9AAE5D69F48D5B32480 /* Pods-ThoughtRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThoughtRecord.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThoughtRecord/Pods-ThoughtRecord.release.xcconfig"; sourceTree = "<group>"; };
 		0FE68D95EB3EF2FA908394B3 /* Pods-ThoughtRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThoughtRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThoughtRecord/Pods-ThoughtRecord.debug.xcconfig"; sourceTree = "<group>"; };
+		1A7418D91D283C0A001B5F1F /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		1AE870B61D24561700B898FB /* ThoughtRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThoughtRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE870B91D24561700B898FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AE870BB1D24561700B898FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				1AE870B91D24561700B898FB /* AppDelegate.swift */,
 				1AE870BB1D24561700B898FB /* ViewController.swift */,
+				1A7418D91D283C0A001B5F1F /* Record.swift */,
 				1AE870BD1D24561700B898FB /* Main.storyboard */,
 				1AE870C01D24561700B898FB /* Assets.xcassets */,
 				1AE870C21D24561700B898FB /* LaunchScreen.storyboard */,
@@ -443,6 +446,7 @@
 			files = (
 				1AE870BC1D24561700B898FB /* ViewController.swift in Sources */,
 				1AE870BA1D24561700B898FB /* AppDelegate.swift in Sources */,
+				1A7418DA1D283C0A001B5F1F /* Record.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

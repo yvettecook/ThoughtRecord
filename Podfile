@@ -7,6 +7,7 @@ target 'ThoughtRecord' do
 
   # Pods for ThoughtRecord
   pod 'ResearchKit', '~> 1.0'
+  pod 'RealmSwift', '~> 1.0.1'
 
   target 'ThoughtRecordTests' do
     inherit! :search_paths

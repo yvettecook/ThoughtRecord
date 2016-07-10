@@ -1,13 +1,6 @@
-//
-//  ViewController.swift
-//  ThoughtRecord
-//
-//  Created by Yvette Cook on 29/06/2016.
-//  Copyright © 2016 Yvette. All rights reserved.
-//
-
 import UIKit
 import ResearchKit
+import RealmSwift
 
 class ViewController: UIViewController, ORKTaskViewControllerDelegate {
 
@@ -54,7 +47,10 @@ class ViewController: UIViewController, ORKTaskViewControllerDelegate {
         let question7 = ORKFormStep(identifier: "question7", title: "Outcome / Re-rate emotion", text: "What am I feeling now? What could I do differently? What would be more effective? Do what works! Act wisely. What will be most helpful for me or the situation? What will the consequences be?")
         question7.formItems = [scale, text]
 
-        let task1 = ORKOrderedTask(identifier: "task", steps: [step1, question1, question2, question3, question4, question5, question6, question7])
+        let summaryStep = ORKCompletionStep(identifier: "SummaryStep")
+        summaryStep.title = "Record Completed"
+
+        let task1 = ORKOrderedTask(identifier: "task", steps: [step1, question1 /*, question2, question3, question4, question5, question6, question7, summaryStep*/])
 
         let taskViewController = ORKTaskViewController(task: task1, taskRunUUID: nil)
         taskViewController.delegate = self
@@ -68,7 +64,17 @@ class ViewController: UIViewController, ORKTaskViewControllerDelegate {
         // You could do something with the result here.
         print("task result: \(taskResult)")
 
-        // Then, dismiss the task view controller.
+        let record = Record()
+        let q1ORKResult = taskResult.resultForIdentifier("question1") as! ORKStepResult
+        let q1SubAnswer = q1ORKResult.results![0] as! ORKTextQuestionResult
+        record.question1 = q1SubAnswer.answer as! String
+
+        let realm = try! Realm()
+
+        try! realm.write {
+            realm.add(record)
+        }
+
         dismissViewControllerAnimated(true, completion: nil)
     }
 
