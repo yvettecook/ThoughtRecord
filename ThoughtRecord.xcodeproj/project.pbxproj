@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A65C9A61D36945200E7AB4E /* Record+ORKOrderedTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65C9A51D36945200E7AB4E /* Record+ORKOrderedTask.swift */; };
+		1A65C9A81D36CE5000E7AB4E /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65C9A71D36CE5000E7AB4E /* Form.swift */; };
 		1AE1988C1D32BF4B004B8405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE198851D32BF4B004B8405 /* Main.storyboard */; };
 		1AE1988E1D32BF4B004B8405 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE198881D32BF4B004B8405 /* ViewController.swift */; };
 		1AE198901D32BF7D004B8405 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AE1988F1D32BF7D004B8405 /* Info.plist */; };
 		1AE198941D32C128004B8405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE198921D32C128004B8405 /* AppDelegate.swift */; };
 		1AE198951D32C128004B8405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AE198931D32C128004B8405 /* Assets.xcassets */; };
-		1AE198971D32C6A3004B8405 /* NewRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE198961D32C6A3004B8405 /* NewRecordViewController.swift */; };
+		1AE198991D32CA89004B8405 /* CBTRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE198981D32CA89004B8405 /* CBTRecord.swift */; };
 		1AE870CF1D24561700B898FB /* ThoughtRecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE870CE1D24561700B898FB /* ThoughtRecordTests.swift */; };
 		1AE870DA1D24561700B898FB /* ThoughtRecordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE870D91D24561700B898FB /* ThoughtRecordUITests.swift */; };
 		266995084C10E1C1B9CD9479 /* Pods_ThoughtRecordTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E15B1095E23C5BE650ACCA /* Pods_ThoughtRecordTests.framework */; };
@@ -39,12 +41,14 @@
 
 /* Begin PBXFileReference section */
 		005C3CF0ED2F316049FA93A3 /* Pods_ThoughtRecord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThoughtRecord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A65C9A51D36945200E7AB4E /* Record+ORKOrderedTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Record+ORKOrderedTask.swift"; sourceTree = "<group>"; };
+		1A65C9A71D36CE5000E7AB4E /* Form.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		1AE198861D32BF4B004B8405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AE198881D32BF4B004B8405 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1AE1988F1D32BF7D004B8405 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AE198921D32C128004B8405 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Supporting Files/AppDelegate.swift"; sourceTree = "<group>"; };
 		1AE198931D32C128004B8405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
-		1AE198961D32C6A3004B8405 /* NewRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRecordViewController.swift; sourceTree = "<group>"; };
+		1AE198981D32CA89004B8405 /* CBTRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBTRecord.swift; sourceTree = "<group>"; };
 		1AE870B61D24561700B898FB /* ThoughtRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThoughtRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE870CA1D24561700B898FB /* ThoughtRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThoughtRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE870CE1D24561700B898FB /* ThoughtRecordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtRecordTests.swift; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 		1AE1987F1D32BF4B004B8405 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1AE198981D32CA89004B8405 /* CBTRecord.swift */,
+				1A65C9A71D36CE5000E7AB4E /* Form.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -103,7 +109,7 @@
 				1AE198911D32C05B004B8405 /* Supporting Files */,
 				1AE198851D32BF4B004B8405 /* Main.storyboard */,
 				1AE198881D32BF4B004B8405 /* ViewController.swift */,
-				1AE198961D32C6A3004B8405 /* NewRecordViewController.swift */,
+				1A65C9A51D36945200E7AB4E /* Record+ORKOrderedTask.swift */,
 			);
 			path = Mobile;
 			sourceTree = "<group>";
@@ -115,6 +121,20 @@
 				1AE198931D32C128004B8405 /* Assets.xcassets */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AE1989A1D32DDA4004B8405 /* CoreTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreTests;
+			sourceTree = "<group>";
+		};
+		1AE1989B1D32DDAF004B8405 /* MobileTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MobileTests;
 			sourceTree = "<group>";
 		};
 		1AE870AD1D24561700B898FB = {
@@ -153,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				1AE870CE1D24561700B898FB /* ThoughtRecordTests.swift */,
+				1AE1989B1D32DDAF004B8405 /* MobileTests */,
+				1AE1989A1D32DDA4004B8405 /* CoreTests */,
 				1AE870D01D24561700B898FB /* Info.plist */,
 			);
 			path = ThoughtRecordTests;
@@ -452,8 +474,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AE198971D32C6A3004B8405 /* NewRecordViewController.swift in Sources */,
 				1AE198941D32C128004B8405 /* AppDelegate.swift in Sources */,
+				1A65C9A61D36945200E7AB4E /* Record+ORKOrderedTask.swift in Sources */,
+				1A65C9A81D36CE5000E7AB4E /* Form.swift in Sources */,
+				1AE198991D32CA89004B8405 /* CBTRecord.swift in Sources */,
 				1AE1988E1D32BF4B004B8405 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
