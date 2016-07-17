@@ -4,7 +4,7 @@ import RealmSwift
 
 class ViewController: UIViewController, ORKTaskViewControllerDelegate {
 
-    let record = CBTRecord()
+    let record = Form.newCBTForm()
 
     override func viewDidLoad() {
         super.viewDidLoad()

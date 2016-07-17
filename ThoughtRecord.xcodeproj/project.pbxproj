@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		1A65C9A61D36945200E7AB4E /* Record+ORKOrderedTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65C9A51D36945200E7AB4E /* Record+ORKOrderedTask.swift */; };
 		1A65C9A81D36CE5000E7AB4E /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65C9A71D36CE5000E7AB4E /* Form.swift */; };
+		1AC288281D3BC9A900298343 /* RecordDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC288271D3BC9A900298343 /* RecordDatabase.swift */; };
+		1AC2882A1D3BCA1200298343 /* RecordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC288291D3BCA1200298343 /* RecordService.swift */; };
+		1AC2882E1D3BCAC600298343 /* RealmFormDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC2882D1D3BCAC600298343 /* RealmFormDatabase.swift */; };
+		1AC288301D3BEA3400298343 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC2882F1D3BEA3400298343 /* Record.swift */; };
+		1AC288321D3BEA5F00298343 /* CBTForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC288311D3BEA5F00298343 /* CBTForm.swift */; };
 		1AE1988C1D32BF4B004B8405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE198851D32BF4B004B8405 /* Main.storyboard */; };
 		1AE1988E1D32BF4B004B8405 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE198881D32BF4B004B8405 /* ViewController.swift */; };
 		1AE198901D32BF7D004B8405 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AE1988F1D32BF7D004B8405 /* Info.plist */; };
 		1AE198941D32C128004B8405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE198921D32C128004B8405 /* AppDelegate.swift */; };
 		1AE198951D32C128004B8405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AE198931D32C128004B8405 /* Assets.xcassets */; };
-		1AE198991D32CA89004B8405 /* CBTRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE198981D32CA89004B8405 /* CBTRecord.swift */; };
 		1AE870CF1D24561700B898FB /* ThoughtRecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE870CE1D24561700B898FB /* ThoughtRecordTests.swift */; };
 		1AE870DA1D24561700B898FB /* ThoughtRecordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE870D91D24561700B898FB /* ThoughtRecordUITests.swift */; };
 		266995084C10E1C1B9CD9479 /* Pods_ThoughtRecordTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E15B1095E23C5BE650ACCA /* Pods_ThoughtRecordTests.framework */; };
@@ -43,12 +47,16 @@
 		005C3CF0ED2F316049FA93A3 /* Pods_ThoughtRecord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThoughtRecord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A65C9A51D36945200E7AB4E /* Record+ORKOrderedTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Record+ORKOrderedTask.swift"; sourceTree = "<group>"; };
 		1A65C9A71D36CE5000E7AB4E /* Form.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		1AC288271D3BC9A900298343 /* RecordDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordDatabase.swift; sourceTree = "<group>"; };
+		1AC288291D3BCA1200298343 /* RecordService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordService.swift; sourceTree = "<group>"; };
+		1AC2882D1D3BCAC600298343 /* RealmFormDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmFormDatabase.swift; sourceTree = "<group>"; };
+		1AC2882F1D3BEA3400298343 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		1AC288311D3BEA5F00298343 /* CBTForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBTForm.swift; sourceTree = "<group>"; };
 		1AE198861D32BF4B004B8405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AE198881D32BF4B004B8405 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1AE1988F1D32BF7D004B8405 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AE198921D32C128004B8405 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Supporting Files/AppDelegate.swift"; sourceTree = "<group>"; };
 		1AE198931D32C128004B8405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
-		1AE198981D32CA89004B8405 /* CBTRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBTRecord.swift; sourceTree = "<group>"; };
 		1AE870B61D24561700B898FB /* ThoughtRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThoughtRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE870CA1D24561700B898FB /* ThoughtRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThoughtRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE870CE1D24561700B898FB /* ThoughtRecordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtRecordTests.swift; sourceTree = "<group>"; };
@@ -97,8 +105,11 @@
 		1AE1987F1D32BF4B004B8405 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				1AE198981D32CA89004B8405 /* CBTRecord.swift */,
 				1A65C9A71D36CE5000E7AB4E /* Form.swift */,
+				1AC288311D3BEA5F00298343 /* CBTForm.swift */,
+				1AC2882F1D3BEA3400298343 /* Record.swift */,
+				1AC288271D3BC9A900298343 /* RecordDatabase.swift */,
+				1AC288291D3BCA1200298343 /* RecordService.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -110,6 +121,7 @@
 				1AE198851D32BF4B004B8405 /* Main.storyboard */,
 				1AE198881D32BF4B004B8405 /* ViewController.swift */,
 				1A65C9A51D36945200E7AB4E /* Record+ORKOrderedTask.swift */,
+				1AC2882D1D3BCAC600298343 /* RealmFormDatabase.swift */,
 			);
 			path = Mobile;
 			sourceTree = "<group>";
@@ -474,10 +486,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC2882E1D3BCAC600298343 /* RealmFormDatabase.swift in Sources */,
+				1AC288321D3BEA5F00298343 /* CBTForm.swift in Sources */,
 				1AE198941D32C128004B8405 /* AppDelegate.swift in Sources */,
+				1AC288301D3BEA3400298343 /* Record.swift in Sources */,
 				1A65C9A61D36945200E7AB4E /* Record+ORKOrderedTask.swift in Sources */,
+				1AC288281D3BC9A900298343 /* RecordDatabase.swift in Sources */,
 				1A65C9A81D36CE5000E7AB4E /* Form.swift in Sources */,
-				1AE198991D32CA89004B8405 /* CBTRecord.swift in Sources */,
+				1AC2882A1D3BCA1200298343 /* RecordService.swift in Sources */,
 				1AE1988E1D32BF4B004B8405 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -3,7 +3,7 @@ import RealmSwift
 import ResearchKit
 
 
-func recordToORKOrderedTask(record: Record) -> ORKOrderedTask {
+func recordToORKOrderedTask(form: Form) -> ORKOrderedTask {
 
     var steps = [ORKStep]()
 
@@ -12,7 +12,7 @@ func recordToORKOrderedTask(record: Record) -> ORKOrderedTask {
 
     steps.append(introStep)
 
-    for step in record.steps! {
+    for step in form.steps {
         steps.append(stepToORKFormStep(step))
     }
 
@@ -25,11 +25,11 @@ func recordToORKOrderedTask(record: Record) -> ORKOrderedTask {
 }
 
 func stepToORKFormStep(step: Step) -> ORKFormStep {
-    let question = ORKFormStep(identifier: step.id, title: step.title, text: step.prompt)
+    let question = ORKFormStep(identifier: step.identifier, title: step.title, text: step.prompt)
 
     var items = [ORKFormItem]()
-    for response in step.responses {
-        items.append(responseToORKFormItem(response))
+    for item in step.items {
+        items.append(itemToORKFormItem(item))
     }
 
     question.formItems = items
@@ -38,14 +38,14 @@ func stepToORKFormStep(step: Step) -> ORKFormStep {
 
 }
 
-func responseToORKFormItem(response: Response) -> ORKFormItem {
-    let item: ORKFormItem
-    switch response.type {
+func itemToORKFormItem(item: Item) -> ORKFormItem {
+    let formItem: ORKFormItem
+    switch item.type {
     case .Scale:
-        item = ORKFormItem(identifier: "[id]scale", text: "", answerFormat: ORKScaleAnswerFormat(maximumValue: 10, minimumValue: 0, defaultValue: 0, step: 1))
+        formItem = ORKFormItem(identifier: "[id]scale", text: "", answerFormat: ORKScaleAnswerFormat(maximumValue: 10, minimumValue: 0, defaultValue: 0, step: 1))
     case .Text:
-        item = ORKFormItem(identifier: "[id]text", text: "", answerFormat: ORKTextAnswerFormat())
+        formItem = ORKFormItem(identifier: "[id]text", text: "", answerFormat: ORKTextAnswerFormat())
     }
-    return item
+    return formItem
 }
 
