@@ -1,0 +1,107 @@
+import Realm
+import RealmSwift
+
+class RealmRecordDatabase: RecordDatabase {
+
+    func save(record: Record) {
+        let convertedRecord = convert(record)
+        let realm = try! Realm()
+
+        try! realm.write {
+            realm.add(convertedRecord)
+        }
+    }
+
+    func readAllRecords() -> [Record?] {
+        let realm = try! Realm()
+
+        let realmRecords = realm.objects(RealmRecord.self)
+        let records = realmRecords.map { convert($0) }
+
+        return records
+    }
+
+    private func convert(record: Record) -> RealmRecord {
+        return RealmRecord(record: record)
+    }
+
+    private func convert(realmRecord: RealmRecord) -> Record? {
+        return Record(realmRecord: realmRecord)
+    }
+
+}
+
+struct RealmConvertibleError: ErrorType {
+    let message: String?
+}
+
+
+class RealmRecord: Object {
+
+    var responses = List<RealmRecordResponse>()
+    var date: NSDate = NSDate()
+    var formID: String = "unknown"
+
+    convenience init(record: Record) {
+        self.init()
+
+        self.date = record.date
+        self.formID = record.form.name
+
+        let realmResponses = record.responses.map { RealmRecordResponse(response: $0) }
+
+
+        // TODO: Refactor
+        for i in realmResponses {
+            self.responses.append(i)
+        }
+    }
+
+}
+
+extension Record {
+
+    init(realmRecord: RealmRecord) {
+        self.date = realmRecord.date
+        self.form = Form.newCBTForm()
+        self.responses = realmRecord.responses.map { try! RecordResponse(realmRecordResponse: $0) }
+    }
+
+}
+
+class RealmRecordResponse: Object {
+
+    var identifier: String = ""
+    var type: String = ""
+    var value: String = ""
+
+    convenience init(response: RecordResponse) {
+        self.init()
+
+        self.identifier = response.identifier
+        self.type = response.type.rawValue
+        self.value = "\(response.value)"
+    }
+
+}
+
+extension RecordResponse {
+
+    init(realmRecordResponse: RealmRecordResponse) throws {
+        self.identifier = realmRecordResponse.identifier
+
+        print("TYPE: \(realmRecordResponse.type)")
+
+        switch realmRecordResponse.type {
+        case "Scale":
+            self.type = .Scale
+            self.value = Int(realmRecordResponse.value)
+        case "Text":
+            self.type = .Text
+            self.value = realmRecordResponse.value
+        default:
+            throw RealmConvertibleError(message: "Problem converting: \(realmRecordResponse)")
+        }
+    }
+
+}

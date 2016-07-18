@@ -2,6 +2,15 @@ import Foundation
 
 extension Form {
 
+    static var cbtFormIdentifers = ["Step1": ["Step1Text"],
+                                    "Step2": ["Step2Scale", "Step2Text"],
+                                    "Step3": ["Step3Text"],
+                                    "Step4": ["Step4Text"],
+                                    "Step5": ["Step5Text"],
+                                    "Step6": ["Step6Text"],
+                                    "Step7": ["Step7Scale", "Step7Text"]]
+
+
     static func newCBTForm() -> Form {
 
         let step1 = Step(identifier: "Step1",

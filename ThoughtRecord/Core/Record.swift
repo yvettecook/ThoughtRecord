@@ -7,11 +7,12 @@ struct Record {
 }
 
 struct RecordResponse {
+    let identifier: ItemIdentifier
     let type: ItemType
-    let value: AnyObject
+    let value: AnyObject?
 }
 
-enum ItemType {
-    case Scale
-    case Text
+enum ItemType: String {
+    case Scale = "Scale"
+    case Text = "Text"
 }

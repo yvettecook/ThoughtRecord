@@ -42,9 +42,9 @@ func itemToORKFormItem(item: Item) -> ORKFormItem {
     let formItem: ORKFormItem
     switch item.type {
     case .Scale:
-        formItem = ORKFormItem(identifier: "[id]scale", text: "", answerFormat: ORKScaleAnswerFormat(maximumValue: 10, minimumValue: 0, defaultValue: 0, step: 1))
+        formItem = ORKFormItem(identifier: item.identifier, text: "", answerFormat: ORKScaleAnswerFormat(maximumValue: 10, minimumValue: 0, defaultValue: 0, step: 1))
     case .Text:
-        formItem = ORKFormItem(identifier: "[id]text", text: "", answerFormat: ORKTextAnswerFormat())
+        formItem = ORKFormItem(identifier: item.identifier, text: "", answerFormat: ORKTextAnswerFormat())
     }
     return formItem
 }

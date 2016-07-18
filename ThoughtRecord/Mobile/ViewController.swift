@@ -30,6 +30,10 @@ class ViewController: UIViewController, ORKTaskViewControllerDelegate {
         let taskResult = taskViewController.result
         // You could do something with the result here.
 
+        let record = try! Record(orkTaskResult: taskResult)
+
+        let db = RealmRecordDatabase()
+        db.save(record)
 
         dismissViewControllerAnimated(true, completion: nil)
     }
