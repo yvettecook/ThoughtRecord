@@ -10,7 +10,10 @@ extension Record {
         var responses = [RecordResponse]()
 
         for id in Form.cbtFormIdentifers {
-            let matchingStep = orkTaskResult.resultForIdentifier(id.0) as! ORKStepResult
+            guard let matchingStep = orkTaskResult.resultForIdentifier(id.0) as? ORKStepResult
+                else {
+                    break
+            }
 
             for stepID in id.1 {
                 guard let matchingResult = matchingStep.resultForIdentifier(stepID)

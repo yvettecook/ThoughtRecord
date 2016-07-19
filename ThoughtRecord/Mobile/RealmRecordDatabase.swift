@@ -71,9 +71,9 @@ extension Record {
 
 class RealmRecordResponse: Object {
 
-    var identifier: String = ""
-    var type: String = ""
-    var value: String = ""
+    dynamic var identifier: String = ""
+    dynamic var type: String = ""
+    dynamic var value: String = ""
 
     convenience init(response: RecordResponse) {
         self.init()
