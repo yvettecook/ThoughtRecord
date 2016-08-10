@@ -6,7 +6,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         let splitViewController = self.window!.rootViewController as! UISplitViewController
@@ -14,7 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let leftNavController = splitViewController.viewControllers.first as! UINavigationController
         let masterViewController = leftNavController.topViewController as! RecordTableViewController
 
-        let detailViewController = splitViewController.viewControllers[1] as! ReviewRecordViewController
+        let rightNavViewController = splitViewController.viewControllers[1] as! UINavigationController
+        let detailViewController = rightNavViewController.topViewController as! ReviewRecordViewController
 
         masterViewController.delegate = detailViewController
 

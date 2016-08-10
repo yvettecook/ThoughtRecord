@@ -18,7 +18,6 @@ final class ResponseHeader: UITableViewHeaderFooterView {
     }
 
     private func setupViews() {
-        backgroundColor = UIColor.lightGrayColor()
         title.numberOfLines = 0
         title.font = UIFont.systemFontOfSize(12)
     }

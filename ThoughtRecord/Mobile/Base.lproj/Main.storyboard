@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RaR-h7-pCr">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RaR-h7-pCr">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -31,13 +31,14 @@
                             <constraint firstItem="RaR-h7-pCr" firstAttribute="leading" secondItem="kFe-H9-gq7" secondAttribute="leadingMargin" constant="-20" id="yG3-yc-adK"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xrI-AM-gON"/>
                     <connections>
                         <outlet property="tableView" destination="RaR-h7-pCr" id="W1I-5v-bga"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NON-vn-pSo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-723" y="912"/>
+            <point key="canvasLocation" x="97" y="1028"/>
         </scene>
         <!--Record Table View Controller-->
         <scene sceneID="xrS-gA-fv6">
@@ -71,6 +72,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="0Cw-Cs-GHA" id="Jk1-E6-C9y"/>
+                        <segue destination="acG-Me-Tmn" kind="showDetail" id="WLq-53-WJF"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yn5-um-vZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -99,7 +101,7 @@
                 <splitViewController id="Bnx-ny-fNr" sceneMemberID="viewController">
                     <connections>
                         <segue destination="ont-so-q9d" kind="relationship" relationship="masterViewController" id="Vfq-8A-aid"/>
-                        <segue destination="cw0-nG-CKv" kind="relationship" relationship="detailViewController" id="F9i-Z3-gtW"/>
+                        <segue destination="acG-Me-Tmn" kind="relationship" relationship="detailViewController" id="F9i-Z3-gtW"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jYo-pH-OBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -124,5 +126,26 @@
             </objects>
             <point key="canvasLocation" x="811" y="-505"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PS7-Ge-J6J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="acG-Me-Tmn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MW4-Ia-Zg7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cw0-nG-CKv" kind="relationship" relationship="rootViewController" id="MCF-Ka-HVc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bLF-jH-3Hu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-723" y="1028"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="WLq-53-WJF"/>
+    </inferredMetricsTieBreakers>
 </document>

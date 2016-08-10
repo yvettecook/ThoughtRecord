@@ -6,7 +6,9 @@ protocol RecordSelectionDelegate: class {
     func recordSelected(newRecord: Record)
 }
 
-class RecordTableViewController: UITableViewController {
+class RecordTableViewController: UITableViewController, UISplitViewControllerDelegate {
+
+    private var collapseDetailViewController = true
 
     var allCBTRecords: [Record]?
 
@@ -15,6 +17,14 @@ class RecordTableViewController: UITableViewController {
     override func viewDidLoad() {
         let db = RealmRecordDatabase()
         allCBTRecords = db.readAllRecords()
+
+        splitViewController?.delegate = self
+    }
+
+    // MARK: - UISplitViewControllerDelegate
+
+    func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController: UIViewController, ontoPrimaryViewController primaryViewController: UIViewController) -> Bool {
+        return collapseDetailViewController
     }
 
 }
@@ -22,6 +32,8 @@ class RecordTableViewController: UITableViewController {
 extension RecordTableViewController {
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        collapseDetailViewController = false
+
         let selectedRecord = allCBTRecords![indexPath.row]
         self.delegate?.recordSelected(selectedRecord)
 

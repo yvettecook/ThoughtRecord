@@ -8,8 +8,7 @@ class ReviewRecordViewController: UIViewController, RecordSelectionDelegate {
 
     func recordSelected(newRecord: Record) {
         self.record = newRecord
-        tableView.reloadData()
-        print(record?.responses)
+        tableView?.reloadData()
     }
 
     override func viewDidLoad() {
