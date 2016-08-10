@@ -12,11 +12,11 @@ class RealmRecordDatabase: RecordDatabase {
         }
     }
 
-    func readAllRecords() -> [Record?] {
+    func readAllRecords() -> [Record] {
         let realm = try! Realm()
 
         let realmRecords = realm.objects(RealmRecord.self)
-        let records = realmRecords.map { convert($0) }
+        let records = realmRecords.flatMap { convert($0) }
 
         return records
     }
@@ -38,9 +38,9 @@ struct RealmConvertibleError: ErrorType {
 
 class RealmRecord: Object {
 
-    var responses = List<RealmRecordResponse>()
-    var date: NSDate = NSDate()
-    var formID: String = "unknown"
+    let responses = List<RealmRecordResponse>()
+    dynamic var date: NSDate = NSDate.distantFuture()
+    dynamic var formID: String = "unknown"
 
     convenience init(record: Record) {
         self.init()
@@ -80,7 +80,12 @@ class RealmRecordResponse: Object {
 
         self.identifier = response.identifier
         self.type = response.type.rawValue
-        self.value = "\(response.value)"
+        
+        if let value = response.value {
+            self.value = "\(value)"
+        } else {
+            self.value = ""
+        }
     }
 
 }
@@ -89,8 +94,6 @@ extension RecordResponse {
 
     init(realmRecordResponse: RealmRecordResponse) throws {
         self.identifier = realmRecordResponse.identifier
-
-        print("TYPE: \(realmRecordResponse.type)")
 
         switch realmRecordResponse.type {
         case "Scale":

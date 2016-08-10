@@ -9,8 +9,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        let db = RealmRecordDatabase()
-        print("Records = \(db.readAllRecords())")
+        let splitViewController = self.window!.rootViewController as! UISplitViewController
+
+        let leftNavController = splitViewController.viewControllers.first as! UINavigationController
+        let masterViewController = leftNavController.topViewController as! RecordTableViewController
+
+        let detailViewController = splitViewController.viewControllers[1] as! ReviewRecordViewController
+
+        masterViewController.delegate = detailViewController
+
+        detailViewController.navigationItem.leftItemsSupplementBackButton = true
+        detailViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
 
         return true
     }

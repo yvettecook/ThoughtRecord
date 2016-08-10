@@ -2,7 +2,7 @@ import UIKit
 import ResearchKit
 import RealmSwift
 
-class ViewController: UIViewController, ORKTaskViewControllerDelegate {
+class FormViewController: UIViewController, ORKTaskViewControllerDelegate {
 
     let record = Form.newCBTForm()
 
