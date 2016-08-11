@@ -50,8 +50,6 @@ class RealmRecord: Object {
 
         let realmResponses = record.responses.map { RealmRecordResponse(response: $0) }
 
-
-        // TODO: Refactor
         for i in realmResponses {
             self.responses.append(i)
         }

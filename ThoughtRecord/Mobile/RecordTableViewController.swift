@@ -32,8 +32,6 @@ class RecordTableViewController: UITableViewController, UISplitViewControllerDel
 extension RecordTableViewController {
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        collapseDetailViewController = false
-
         let selectedRecord = allCBTRecords![indexPath.row]
         self.delegate?.recordSelected(selectedRecord)
 
@@ -80,11 +78,16 @@ extension RecordTableViewController: ORKTaskViewControllerDelegate {
     func taskViewController(taskViewController: ORKTaskViewController,
                             didFinishWithReason reason: ORKTaskViewControllerFinishReason,
                                                 error: NSError?) {
-        let taskResult = taskViewController.result
 
-        let record = try! Record(orkTaskResult: taskResult)
-        let db = RealmRecordDatabase()
-        db.save(record)
+        if reason == .Completed {
+            let taskResult = taskViewController.result
+
+            let record = try! Record(orkTaskResult: taskResult)
+            let db = RealmRecordDatabase()
+            db.save(record)
+            allCBTRecords = db.readAllRecords()
+            tableView.reloadData()
+        }
 
         dismissViewControllerAnimated(true, completion: nil)
     }

@@ -7,11 +7,8 @@ protocol RecordService {
 }
 
 
-
 class PersistedRecordService: RecordService {
 
-    func createNewRecord() {
-
-    }
+    func createNewRecord() {}
 
 }

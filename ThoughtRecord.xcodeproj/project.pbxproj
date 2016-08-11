@@ -12,6 +12,7 @@
 		1A241F811D5BC41200010EA2 /* UIView+AutoLayoutExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A241F801D5BC41200010EA2 /* UIView+AutoLayoutExtensions.swift */; };
 		1A241F831D5BC68600010EA2 /* ReuseableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A241F821D5BC68600010EA2 /* ReuseableView.swift */; };
 		1A241F851D5BCCE500010EA2 /* ResponseHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A241F841D5BCCE500010EA2 /* ResponseHeader.swift */; };
+		1A241FC31D5C62A700010EA2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A241FC21D5C62A700010EA2 /* Launch Screen.storyboard */; };
 		1A65C9A61D36945200E7AB4E /* Record+ORKOrderedTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65C9A51D36945200E7AB4E /* Record+ORKOrderedTask.swift */; };
 		1A65C9A81D36CE5000E7AB4E /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65C9A71D36CE5000E7AB4E /* Form.swift */; };
 		1AABDCE71D3EC2B500A39D26 /* RecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AABDCE61D3EC2B500A39D26 /* RecordTableViewController.swift */; };
@@ -22,7 +23,6 @@
 		1AC288321D3BEA5F00298343 /* CBTForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC288311D3BEA5F00298343 /* CBTForm.swift */; };
 		1AC288341D3C12E700298343 /* Response+ORKResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC288331D3C12E700298343 /* Response+ORKResult.swift */; };
 		1AE1988C1D32BF4B004B8405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE198851D32BF4B004B8405 /* Main.storyboard */; };
-		1AE1988E1D32BF4B004B8405 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE198881D32BF4B004B8405 /* FormViewController.swift */; };
 		1AE198901D32BF7D004B8405 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AE1988F1D32BF7D004B8405 /* Info.plist */; };
 		1AE198941D32C128004B8405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE198921D32C128004B8405 /* AppDelegate.swift */; };
 		1AE198951D32C128004B8405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AE198931D32C128004B8405 /* Assets.xcassets */; };
@@ -57,6 +57,7 @@
 		1A241F801D5BC41200010EA2 /* UIView+AutoLayoutExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayoutExtensions.swift"; sourceTree = "<group>"; };
 		1A241F821D5BC68600010EA2 /* ReuseableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseableView.swift; sourceTree = "<group>"; };
 		1A241F841D5BCCE500010EA2 /* ResponseHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseHeader.swift; sourceTree = "<group>"; };
+		1A241FC21D5C62A700010EA2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Supporting Files/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		1A65C9A51D36945200E7AB4E /* Record+ORKOrderedTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Record+ORKOrderedTask.swift"; sourceTree = "<group>"; };
 		1A65C9A71D36CE5000E7AB4E /* Form.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		1AABDCE61D3EC2B500A39D26 /* RecordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordTableViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		1AC288311D3BEA5F00298343 /* CBTForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBTForm.swift; sourceTree = "<group>"; };
 		1AC288331D3C12E700298343 /* Response+ORKResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+ORKResult.swift"; sourceTree = "<group>"; };
 		1AE198861D32BF4B004B8405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1AE198881D32BF4B004B8405 /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		1AE1988F1D32BF7D004B8405 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AE198921D32C128004B8405 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Supporting Files/AppDelegate.swift"; sourceTree = "<group>"; };
 		1AE198931D32C128004B8405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
@@ -133,7 +133,6 @@
 			children = (
 				1AE198911D32C05B004B8405 /* Supporting Files */,
 				1AE198851D32BF4B004B8405 /* Main.storyboard */,
-				1AE198881D32BF4B004B8405 /* FormViewController.swift */,
 				1A241F7E1D5BAB6D00010EA2 /* ResponseCell.swift */,
 				1AABDCE61D3EC2B500A39D26 /* RecordTableViewController.swift */,
 				1A2201101D4CFA7A00481F47 /* ReviewRecordViewController.swift */,
@@ -152,6 +151,7 @@
 				1AE198931D32C128004B8405 /* Assets.xcassets */,
 				1A241F801D5BC41200010EA2 /* UIView+AutoLayoutExtensions.swift */,
 				1A241F821D5BC68600010EA2 /* ReuseableView.swift */,
+				1A241FC21D5C62A700010EA2 /* Launch Screen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -321,6 +321,7 @@
 				TargetAttributes = {
 					1AE870B51D24561700B898FB = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 569VC29TM2;
 					};
 					1AE870C91D24561700B898FB = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -359,6 +360,7 @@
 			files = (
 				1AE198901D32BF7D004B8405 /* Info.plist in Resources */,
 				1AE198951D32C128004B8405 /* Assets.xcassets in Resources */,
+				1A241FC31D5C62A700010EA2 /* Launch Screen.storyboard in Resources */,
 				1AE1988C1D32BF4B004B8405 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,7 +524,6 @@
 				1A65C9A81D36CE5000E7AB4E /* Form.swift in Sources */,
 				1AC2882A1D3BCA1200298343 /* RecordService.swift in Sources */,
 				1A2201111D4CFA7A00481F47 /* ReviewRecordViewController.swift in Sources */,
-				1AE1988E1D32BF4B004B8405 /* FormViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,10 +660,13 @@
 			baseConfigurationReference = 297AEF694F9E4562C3D6CFF2 /* Pods-ThoughtRecord.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ThoughtRecord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yvette.ThoughtRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -671,10 +675,13 @@
 			baseConfigurationReference = 669BBE8DBF97C97CE9C9E7CE /* Pods-ThoughtRecord.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ThoughtRecord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yvette.ThoughtRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
