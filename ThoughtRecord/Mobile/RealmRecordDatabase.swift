@@ -21,6 +21,16 @@ class RealmRecordDatabase: RecordDatabase {
         return records
     }
 
+    func delete(record: Record) {
+        let realm = try! Realm()
+        let predicate = NSPredicate(format: "date = %@", record.date)
+        let recordToDelete = realm.objects(RealmRecord.self).filter(predicate)
+
+        try! realm.write {
+            realm.delete(recordToDelete)
+        }
+    }
+
     private func convert(record: Record) -> RealmRecord {
         return RealmRecord(record: record)
     }

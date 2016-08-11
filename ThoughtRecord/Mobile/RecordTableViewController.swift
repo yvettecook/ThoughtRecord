@@ -14,10 +14,10 @@ class RecordTableViewController: UITableViewController, UISplitViewControllerDel
 
     weak var delegate: RecordSelectionDelegate?
 
-    override func viewDidLoad() {
-        let db = RealmRecordDatabase()
-        allCBTRecords = db.readAllRecords()
+    let database = RealmRecordDatabase()
 
+    override func viewDidLoad() {
+        allCBTRecords = database.readAllRecords()
         splitViewController?.delegate = self
     }
 
@@ -38,6 +38,23 @@ extension RecordTableViewController {
         if let reviewRecordVC = self.delegate as? ReviewRecordViewController {
             splitViewController?.showDetailViewController(reviewRecordVC, sender: nil)
         }
+    }
+
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if (editingStyle == UITableViewCellEditingStyle.Delete) {
+            let record = allCBTRecords![indexPath.row]
+            database.delete(record)
+        }
+        refresh()
+    }
+
+    func refresh() {
+        allCBTRecords = database.readAllRecords()
+        tableView.reloadData()
     }
 
 }
@@ -85,8 +102,7 @@ extension RecordTableViewController: ORKTaskViewControllerDelegate {
             let record = try! Record(orkTaskResult: taskResult)
             let db = RealmRecordDatabase()
             db.save(record)
-            allCBTRecords = db.readAllRecords()
-            tableView.reloadData()
+            refresh()
         }
 
         dismissViewControllerAnimated(true, completion: nil)
